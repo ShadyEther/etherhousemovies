@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EtherHouse</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header><h1>Movies</h1></header>
+    <p>
+    This is a static webpage which fetches data from the <a href="https://vidsrc.to/">VidSrc Website</a><br>
+    Lists the movies according to latest uploads<br>
+    Click on the movie links to stream them in a new tab<br>
+    </p>
+    <div id="pagination">
+      <div style="display: flex;">
+        Current page:
+        <div id="page-no-display"></div>
+      </div>
+      <div>
+        <input type="number" id="page-no-input" value="0" />
+        <button onclick="topage()">Go</button>
+        <button onclick="prev()">prev</button>
+        <button onclick="next()">next</button>
+      </div>
+    </div>
+
+    <div>List of movies</div>
+    <div id="display-list"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
